@@ -8,7 +8,7 @@ import { ACTIVITY_DATA } from '../other/data';
   styleUrls: ['./dashboard.component.scss']  
 })  
 export class DashboardComponent implements OnInit {  
-  displayedColumns: string[] = ['name', 'distance', 'type'];  
+  displayedColumns: string[] = ['athlete', 'name', 'distance', 'elapsed_time', 'type'];  
   dataSource = ACTIVITY_DATA;  
   
   constructor() { }  
