@@ -1,0 +1,24 @@
+<mat-card>  
+  <mat-card-title>Activities Dashboard</mat-card-title>  
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  
+    <!-- Name Column -->  
+    <ng-container matColumnDef="name">  
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>  
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>  
+    </ng-container>  
+  
+    <!-- Type Column -->  
+    <ng-container matColumnDef="type">  
+      <mat-header-cell *matHeaderCellDef> Type </mat-header-cell>  
+      <mat-cell *matCellDef="let element"> {{element.type}} </mat-cell>  
+    </ng-container>  
+  
+    <!-- Distance Column -->  
+    <ng-container matColumnDef="distance">  
+      <mat-header-cell *matHeaderCellDef> Distance (m) </mat-header-cell>  
+      <mat-cell *matCellDef="let element"> {{element.distance}} </mat-cell>  
+    </ng-container>  
+
+  </mat-table>
+<mat-card>  
